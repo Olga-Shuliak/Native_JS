@@ -9,9 +9,9 @@ type MyAddressType = {
 type TechType = {
   id: number
   title: string
-  isLearn: boolean
+  isLearn?: boolean
 }
-type StudentType = {
+export type StudentType = {
   id: number
   name: string
   age: number
@@ -22,7 +22,7 @@ type StudentType = {
 
 }
 
-const student: StudentType = {
+export const student: StudentType = {
   id: 1,
   name: 'Olia',
   age: 35,
@@ -49,11 +49,6 @@ const student: StudentType = {
       id: 3,
       title: 'JS',
       isLearn: true
-    },
-    {
-      id: 4,
-      title: 'React',
-      isLearn: false
     }
   ]
 }
